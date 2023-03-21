@@ -7,8 +7,8 @@ function App() {
     <>
       <div className={classes.App}>
         <Flex padding="4rem 0rem" fdirection="column">
-          <P letterspacing="1rem">SPACE</P>
-          <H1 font="5.625em" width="50rem">
+          <P letterspacing=".7rem">SPACE</P>
+          <H1 font="5.635rem" width="50rem">
             Beyond the Gradient
           </H1>
           <HR />
@@ -17,7 +17,7 @@ function App() {
             and a subtle texture.
           </P>
         </Flex>
-        <Flex padding="4rem 0rem" style={{ gap: "2.5rem", width: "65rem" }}>
+        <Flex padding="4rem 0rem" gap="2.5rem" width="65rem">
           <Card
             cardTitleColor="#DE6E31"
             CardTitle="Heat."

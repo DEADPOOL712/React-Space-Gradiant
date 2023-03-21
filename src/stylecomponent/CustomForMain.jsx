@@ -17,8 +17,16 @@ export const Flex = styled.div`
   justify-content: center;
   align-items: center;
   min-height: ${(props) => props.minH};
+  width: ${(props) => props.width};
   flex-direction: ${(props) => props.fdirection};
   padding: ${(props) => props.padding};
+  gap: ${(props) => props.gap};
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 7px;
+    gap: 1rem;
+  }
 `;
 // flex-direction: column;
 
@@ -27,8 +35,11 @@ export const H1 = styled.h1`
   font-family: Playfair Display;
   font-size: ${(props) => props.font};
   font-weight: ${(props) => props.weight};
-  width: ${(props) => props.width};
+  max-width: ${(props) => props.width};
   text-align: center;
+  @media only screen and (max-width: 600px) {
+    font-size: 4rem;
+  }
 `;
 
 export const P = styled.p`
